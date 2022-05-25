@@ -1,11 +1,15 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-menu-button color="primary"></ion-menu-button>
+
+         
+     
+      <ion-toolbar style=" text-align: center;">  
+        <img src="../assets/logotop.png" style="height: 35px;text-align: center;">
+         <ion-buttons slot="end">
+          <ion-menu-button color="primary" slot="end"  menu-toggle="right" ></ion-menu-button>
         </ion-buttons>
-        <ion-title>{{ $route.params.id }}</ion-title>
+
       </ion-toolbar>
     </ion-header>
     
@@ -18,6 +22,8 @@
     
       <div id="container">
         <strong class="capitalize">{{ $route.params.id }}</strong>
+
+        folderPage.vue
         <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
       </div>
     </ion-content>
